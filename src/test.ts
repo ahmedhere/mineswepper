@@ -1,12 +1,19 @@
-let a: number = 23;
-let b: boolean = false;
-let c: string = "Muhammad Ahmed";
+const a: number = 23;
+const b: boolean = false;
+const c: string = "Muhammad Ahmed";
 
-interface BasicUser {
+let d: string[];
+let aliasD: Array<string>;
+
+interface BasicUser<A = boolean> {
   name: string;
   surname: string;
   age: number;
-  isAdmin: boolean;
+  isAdmin: A;
+}
+
+interface BasicUser {
+  account: number;
 }
 
 const user: BasicUser = {
@@ -14,6 +21,7 @@ const user: BasicUser = {
   age: 23,
   isAdmin: false,
   surname: "Mughal",
+  account: 100,
 };
 
 interface userWithPermission extends BasicUser {
