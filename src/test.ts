@@ -1,3 +1,4 @@
+console.log("Start");
 const a: number = 23;
 const b: boolean = false;
 const c: string = "Muhammad Ahmed";
@@ -40,3 +41,5 @@ type MathFunc = (a: number, b: number) => number;
 
 const multiplication: MathFunc = (a, b) => a * b;
 const add: MathFunc = (a, b) => a + b;
+
+console.log("end");
